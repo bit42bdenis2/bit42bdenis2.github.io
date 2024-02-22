@@ -3,7 +3,7 @@
 image: alpine
 pages:
   script:
-    - touch public/$CI_COMMIT_SHA
+    - touch $CI_COMMIT_SHA
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
